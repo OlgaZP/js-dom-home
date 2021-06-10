@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+button {
+    padding: 1em;
+    margin: 2em;
+    text-align: center;
+    color: wheat;
+    background-color: darkcyan;
+    border: darkslategrey 2px solid;
+}
