@@ -25,5 +25,48 @@ image.onmouseout = (e) => {image.setAttribute('src', firstImgSrc)};
 //image.addEventListener('mouseover', (e) => { image.setAttribute('src', secondImgSrc); });
 //image.addEventListener('mouseout', (e) => { image.setAttribute('src', firstImgSrc); });
 
-
 document.body.append(image);
+//document.body.before(document.getElementsByTagName('h2'));
+
+// 3) Сгенерировать заданную структуру:
+// <h1>Header1</h1>
+// <article>
+// <h2>Header2</h2>
+// <div><img src="" alt=""></div>
+// <p>It is paragraph</p>
+// </article>
+// (привязать <div id="root"></div>)
+const hTaskElement = document.createElement('h2');
+hTaskElement.innerText = 'Task 3';
+document.body.append(hTaskElement);
+
+const divRoot = document.createElement('div');
+divRoot.id = "root";
+divRoot.setAttribute('width', '70%');
+document.body.append(divRoot);
+
+const h1Element = document.createElement('h1');
+h1Element.innerText = 'Header 1';
+h1Element.setAttribute('align', 'center');
+divRoot.append(h1Element);
+
+const articleElement = document.createElement('article');
+divRoot.append(articleElement);
+
+const h2Element = document.createElement('h2');
+h2Element.innerText = 'Header 2';
+h2Element.setAttribute('align', 'center');
+articleElement.append(h2Element);
+
+const innerDivElement = document.createElement('div');
+articleElement.append(innerDivElement);
+
+const pElement = document.createElement('p');
+pElement.innerText = 'This is paragraph text';
+articleElement.append(pElement);
+
+const imageElement = document.createElement('img');
+imageElement.setAttribute('src', ' ');
+imageElement.setAttribute('alt', ' ');
+innerDivElement.append(imageElement);
+
