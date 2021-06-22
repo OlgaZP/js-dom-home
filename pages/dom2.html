@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM-2 Model Page</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <script defer src="./../js/dom2.js"></script>
+</head>
+<body>
+    <h2>Task 1</h2>
+    <div class="inputDiv">
+        <label for="r">Input radius</label>
+        <input type="text" id="r" placeholder="000.000" maxlength=10 autofocus required pattern="^\d+[.]{0,1}(\d+)$">
+        <label for="V">Get volume of sphere</label>
+        <input type="text" id="V" disabled>
+        <button id="evalV">Evaluate V</button>        
+    </div>
+
+    <h2>Task 2</h2>
+    <div id="elem">
+        <p>Dinamic Div</p>
+        <button id="addClassBtn">Add Class</button>
+        <button id="removeClassBtn">Remove Class</button>
+        <button id="checkClassBtn">Check Class</button>
+        <button id="reverseClassBtn">Reverse Class</button>
+    </div>
+
+    <h2>Task 3</h2>
+    <div class="listContainer">
+        <ul style="padding: 10px;">
+
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,3 +1,5 @@
+'use strict';
+
 // По нажатию на кнопку изменить текст самой кнопки (см. innerText).
 const buttonElement = document.querySelector('button');
 

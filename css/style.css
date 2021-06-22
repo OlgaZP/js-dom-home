@@ -10,5 +10,48 @@ button {
     text-align: center;
     color: wheat;
     background-color: darkcyan;
-    border: darkslategrey 2px solid;
+    border: darkslategrey 1px solid;
+    border-radius: 5px;
+}
+
+.inputDiv {
+    border: teal 2px dotted;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+#elem {
+    border:mediumturquoise 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+.www {
+    background-color: mediumaquamarine;    
+}
+
+.listContainer {
+    border: forestgreen dashed 1px;
+    border-radius: 2px;
+    background-color: palegreen;
+    width: 60%; 
+}
+
+.listContainer li {
+    padding: 0.5em;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.liPushed {
+    background-color:rgb(4, 196, 148);
 }
