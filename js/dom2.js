@@ -10,7 +10,14 @@ inputR.oninput = e => {
     inputV.value='';
 }
 document.getElementById('evalV').onclick = (e) => {
+    //объем вычисляется только в случае, если радиус введен правильно
+    //иначе алертом показывает предупреждение
+    //это работает в паре в шаблоном ввода и псевдоклассом invalid
+    if (inputR.checkValidity()) {
     inputV.value = ((4 / 3) * Math.PI * Math.pow(document.getElementById('r').value, 3)).toFixed(4);
+    } else {
+        alert('Please, input the number as radiusgit add!!!');
+    }
 }
 
 // 2.Дан элемент #elem. Реализуйте 4 функции:
