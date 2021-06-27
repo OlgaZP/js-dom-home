@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Example</title>
+    <script defer src="./../js/validation.js"></script>
+    <link rel="stylesheet" href="./../css/validation.css">
+</head>
+
+<body>    
+    <form>       
+        <h2>Contact form</h2>
+        <p>Please, fill in your information and we'll be sending your order</p>
+        <div class="input-container">     
+            <div class="input-line">  
+                <div class="input-label"><label>Your name</label></div>
+                <div class="input-elements">
+                    <div class="input-line">
+                    <div class="input-element"><input type="text" id="firstName" placeholder="first name"></div>
+                    <div class="input-element"><input type="text" id="lastName" placeholder="last name"></div>   
+                    </div>
+                </div>         
+            </div> 
+            <div class="input-line">
+                <div class="input-label"><label for="email">Your email</label></div>
+                <div class="input-elements">
+                    <div class="input-element"><input type="email" id="email" placeholder="your_mail@mail.com" required></div>
+                </div>
+            </div> 
+            <div class="input-line">
+                <div class="input-label"><label>Phone*</label></div>
+                <div class="input-elements">
+                    <input type="number" name="phoneCode1" id="phoneCode1" placeholder="000" required>
+                    <input type="number" name="phoneCode2" id="phoneCode2" placeholder="000" required>
+                    <input type="number" name="phoneNumber" id="phoneNumber" placeholder="0000" required>            
+                </div>
+            </div> 
+            <div class="input-line">
+                <div class="input-label"><label for="subject">Message subject*</label></div>
+                <div class="input-elements">
+                    <select class="input-element" id="subject" required>
+                        <option value="date">Delivery</option>
+                        <option value="packaging">Packaging</option>
+                        <option value="peyment">Payment</option>
+                        <option value="other" selected>Other</option>
+                    </select>   
+                </div>         
+            </div> 
+            <div class="input-line">
+                <div class="input-label"><label for="message">Message*</label></div>
+                <div class="input-elements">
+                    <textarea class="input-element" rows="10" cols="50" id="message"></textarea>
+                </div>          
+            </div>
+        
+        <hr style="width: 95%;">
+        <div class="input-line">
+            <div class="input-label"><label> </label></div>
+            <div class="input-elements">
+                <button type="submit">SUBMIT FORM</button>   
+            </div>    
+        </div> 
+    </div>
+    </form>
+    
+</body>
+</html>
