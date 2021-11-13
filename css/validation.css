@@ -1,79 +1,91 @@
 * {
-    /* margin: 0;
+  /* margin: 0;
     padding: 0; */
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url("/./img/background.jpeg");
-    background-size: 100%;
-    color: darkslategrey;
+  background-image: url('/./img/background.jpeg');
+  background-size: 100%;
+  color: darkslategrey;
 }
 
 form {
-    width: 90%;
-    height: 80%;
-    margin: 2em auto;    
-    text-align: left;
-
-    box-shadow: 0 0 15px 5px darkslategrey;
+  width: 90%;
+  max-width: 900px;
+  min-width: 450px;
+  height: 80%;
+  margin: 2em auto;
+  text-align: left;
+  padding: 1.5em;
+  box-shadow: 0 0 15px 5px darkslategrey;
 }
 
-form h2 {
-    padding: 2em 0.5em 0.5em;
-    
-}
+/* form h2 {
+  padding: 2em 0.5em 0.5em;
+} */
 
-form p {
-    padding-left: 1em;
-}
+/* form p {
+  padding-left: 1em;
+} */
 
 input {
-    width: 100%;
+  width: 100%;
 }
 .input-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;     
-    /* border-bottom: 1px white solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border-bottom: 1px white solid; */
 }
 
 .input-line {
-    display: flex;
-    /* justify-content: flex-end; */
-    /* padding: 0.5em 1em; */
+  display: flex;
+  /* justify-content: flex-end; */
+  /* padding: 0.5em 1em; */
 }
 
 .input-label {
-    /* margin: 0.25em 2em 0.25em 0; */
-    flex: 1;
+  /* margin: 0.25em 2em 0.25em 0; */
+  flex: 1;
 }
 
 .input-elements {
-    flex: 3; 
-    /* padding: 0.25em 0.5em; */
-    /* margin:0 0.25em;  */
-    /* margin-left: auto; */
-    display: flex;
-    justify-content: space-between; 
+  flex: 3;
+  /* padding: 0.25em 0.5em; */
+  /* margin:0 0.25em;  */
+  /* margin-left: auto; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .input-element {
-    flex: 1;
-    margin: 0.25em;
+  flex: 1;
+  margin: 0.25em;
 }
 
 button {
-    background-color: transparent;
-    border: white 1px solid;
-    /* width:65%;  */
-    height: 2em;
-    margin-right: .25em;
-    /* padding-right: 2em;     */
-    color: darkslategrey;
-    align-self: flex-end;
+  background-color: transparent;
+  border: white 1px solid;
+  /* width:65%;  */
+  height: 2em;
+  margin-right: 0.25em;
+  /* padding-right: 2em;     */
+  color: darkslategrey;
+  align-self: flex-end;
 }
 
-/* input:invalid {
-    border: firebrick 2px solid;
-} */
+input:invalid {
+  border: firebrick 2px solid;
+}
+input:focus:invalid {
+  border: 1px solid black;
+}
+
+input:valid {
+  border: darkgreen 2px solid;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, white, lightgreen);
+}

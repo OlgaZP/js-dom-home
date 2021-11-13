@@ -17,8 +17,8 @@
             <div class="input-line">  
                 <div class="input-label"><label>Your name</label></div>
                 <div class="input-elements">                    
-                    <div class="input-element"><input type="text" id="firstName" placeholder="first name"></div>
-                    <div class="input-element"><input type="text" id="lastName" placeholder="last name"></div>   
+                    <div class="input-element"><input type="text" id="firstName" placeholder="first name" autofocus pattern="^[A-Z][a-z]{0,19}(-[A-Z][a-z]{0,19})?$"></div>
+                    <div class="input-element"><input type="text" id="lastName" placeholder="last name" pattern="^[A-Z][a-z]{0,19}$"></div>   
                     
                 </div>         
             </div> 
@@ -31,9 +31,9 @@
             <div class="input-line">
                 <div class="input-label"><label>Phone*</label></div>
                 <div class="input-elements">
-                    <input class="input-element" type="number" name="phoneCode1" id="phoneCode1" placeholder="000" required>
-                    <input class="input-element" type="number" name="phoneCode2" id="phoneCode2" placeholder="000" required>
-                    <input class="input-element" type="number" name="phoneNumber" id="phoneNumber" placeholder="0000" required>            
+                    <input class="input-element" type="text" name="phoneCode1" id="phoneCode1" placeholder="000" required minlength="3" maxlength="3" pattern="^\d{3}$">
+                    <input class="input-element" type="text" name="phoneCode2" id="phoneCode2" placeholder="000" required minlength="3" maxlength="3" pattern="^\d{3}$">
+                    <input class="input-element" type="text" name="phoneNumber" id="phoneNumber" placeholder="0000" required minlength="4" maxlength="4" pattern="^\d{4}$">            
                 </div>
             </div> 
             <div class="input-line">
@@ -42,7 +42,7 @@
                     <select class="input-element" id="subject" required>
                         <option value="date">Delivery</option>
                         <option value="packaging">Packaging</option>
-                        <option value="peyment">Payment</option>
+                        <option value="payment">Payment</option>
                         <option value="other" selected>Other</option>
                     </select>   
                 </div>         
